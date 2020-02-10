@@ -1,0 +1,34 @@
+{
+    "development": {
+      "server": {
+        "username": "postgres",
+        "password": "abc123",
+        "database": "postgres",
+        "host": "db",
+        "dialect": "postgres",
+        "port": 5432,
+        "expireTime": "24*60*10",
+        "logging": false
+      },
+      "port":30001,
+      "jwt": {
+        "secret": "SAMPLE SECRET CHANGE THIS"
+      }
+    },
+    "production": {
+      "server": {
+        "username": "dev_user",
+        "password": "dev_password",
+        "database": "dev_database",
+        "host": "localhost",
+        "dialect": "postgres",
+        "port": 5432,
+        "expireTime": "24*60*10",
+        "logging": false
+      },
+      "port":30000,
+      "jwt": {
+        "secret": "SAMPLE SECRET CHANGE THIS"
+      }
+    }
+  }
